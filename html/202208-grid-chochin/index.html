@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<title>グリッドレイアウトでヘッダーとフッターを固定するデモ</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+  }
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  .header {
+    height: 100px;
+    background: orange;
+  }
+  .body {
+    overflow: auto;
+  }
+  .footer {
+    height: 100px;
+    background: orange;
+  }
+</style>
+
+<div class="container">
+  <header class="header">Header</header>
+  <div class="body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non ex
+    mauris. Morbi ullamcorper scelerisque ultrices. Aliquam eu fringilla tortor.
+    Mauris mi dolor, accumsan eu posuere at, pharetra in enim. In euismod turpis
+    a nisi rhoncus, nec dictum libero faucibus. Etiam lorem orci, bibendum non
+    erat sit amet, viverra pretium metus. Ut molestie efficitur porta. Praesent
+    nec rutrum orci, eu tristique enim. Nulla ultrices, nunc vel consectetur
+    efficitur, ligula libero eleifend dui, eu dignissim nibh tellus ac nisi.
+    Maecenas semper urna quis nibh auctor placerat eu ut nibh. Aliquam eu erat
+    nec libero condimentum sodales quis sed lacus. Suspendisse sapien est,
+    dapibus non mollis eget, viverra quis metus. Nunc cursus odio ut vestibulum
+    gravida. Aliquam semper velit quis lorem vulputate, eu sollicitudin libero
+    tristique. In sollicitudin, nulla sed tincidunt efficitur, lacus massa
+    consequat nibh, id sagittis eros eros accumsan quam. Aenean pellentesque
+    urna tellus, quis iaculis sem ornare eu. Pellentesque eu elit quis velit
+    mattis accumsan sed ut nisl. Vestibulum suscipit ligula nec ante ornare,
+    vitae vestibulum massa fringilla. Nam ut dictum nisl, eget vulputate sapien.
+    Pellentesque tempor placerat libero, vitae tempus lacus egestas eget. Etiam
+    nisl leo, egestas sed lobortis eu, hendrerit vel purus. Maecenas quam urna,
+    viverra eget malesuada at, faucibus sed tortor. Pellentesque quis pulvinar
+    enim. Pellentesque arcu enim, volutpat et mauris vitae, aliquam sollicitudin
+    magna. Aenean aliquet mollis leo, at euismod quam pharetra eu.
+  </div>
+  <footer class="footer">Footer</footer>
+</div>
